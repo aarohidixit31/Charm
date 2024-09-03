@@ -1,7 +1,7 @@
 /*landing-page*/
 .navbar {
  background-color: #86C6FD;
-  /* color: #f9faf8; */
+ /* color: black; */
   height: 80px;
   font-size: 19px;
   font-family: "Montserrat";
@@ -11,22 +11,30 @@
   font-size: 1.2rem;
   font-family: "Montserrat";
 }
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+color: #213a4f;
+font-weight: 500;
+
+}
 .navbar-brand{
   margin-left: 50px;
 }
-/* .navbar-logo {
+.navbar-logo {
   color: #1883e0;
   font-family: "mv boli";
   font-size: 22px;
   font-weight: 1000;
   margin-right: 90px; 
    padding-right: 38px;
-} */
+}
 .navbar .icons i {
 
-  color: rgb(9, 1, 1);
+  color: black;
   display: inline-flex;
-  margin-left: 19px;
+  margin-left: 20px;
   justify-content: space-between;
   font-size: 1rem;
   cursor: pointer;
@@ -34,7 +42,7 @@
 }
 
 .navbar .icons i:hover {
-  color: black;
+  color: #0c5392;
 }
 a {
   text-decoration: none;
