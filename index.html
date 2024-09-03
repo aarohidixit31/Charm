@@ -2,9 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+   <meta name="keywords" content="makeup, beauty, cosmetics, skincare" />
+    <meta
+      name="description"
+      content="A world of beauty products where you can shop makeup skincare and beauty products"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GLOWMELA</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>
+      GLOWMELA
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,89 +25,296 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/landing.css" />
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <img
-        src="./img/icons/cosmetics.png"
-        alt=""
-        style="width: 3.7rem; height: 3.5rem"
-      />
-      <ul class="leftnav">
-        <div style="margin-left: -24rem; display: flex">
-          <li><a href="">HOME</a></li>
-          <li><a href="">FACE</a></li>
-          <li><a href="">EYES</a></li>
-          <li><a href="">LIPS</a></li>
-          <li><a href="">SKINCARE</a></li>
+
+      <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+          src="./img/cosmetics.png"
+          alt=""
+          style="width: 3.7rem; height: 3.5rem"
+        />
+          </a>
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Search"
+              />
+            </form>
+            <div class="icons">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-user" id="login"></i>
+            </div>
+          </div>
         </div>
-      </ul>
-      <ul class="rightnav">
-        <li>
-          <a href=""
-            ><img src="./img/icons/search.svg" alt="" style="width: 2rem"
-          /></a>
-        </li>
-        <li>
-          <a href="./login.html"
-            ><img
-              src="./img/icons/login.svg"
-              alt=""
-              style="margin-right: 4px; width: 2rem"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="./img/icons/shopping-bag.svg"
-              alt=""
-              style="width: 1.4rem"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="for">
-      <div class="for-text">
-        <div style="font-family: Bebas Neue, sans-serif; font-size: 3rem">
-          <b>JUST ARRIVED !!😍 </b>
+      </nav>
+      <!--Hero-->
+      <!-- <div class=" d-none d-md-flex hero w-100" >
+         <div class="hero-text">
+        <h1>WELCOME TO LAURAGLAMOUR</h1>
+        <p class="text-start">Where we make discovering your next beauty products easy. We feature beauty products tested & reviewed by beauty experts each month.</p>
+    </div>
+     <img src="assets/images/My Coding Journey.png" class="hero-img img-fluid"/>
+      </div>  -->
+      <div class="for">
+        <div class="for-text">
+          <div style="font-family: Bebas Neue, sans-serif; font-size: 4rem; ">
+            <b style="margin-bottom: 10rem;">WELCOME TO GLOWMELA !!😍 </b>
+          </div>
+          <p>
+            Luxury Makeup at Unbeatable Prices: Treat Yourself Without Breaking
+            the Bank!
+          </p>
+         <a href="./catalog.html"> <button
+            style="
+              padding: 10px 30px;
+              font-size: 18px;
+              border-radius: 10px;
+              margin-top: 0px;
+              background-color: transparent;
+              color: white;
+            "
+          >
+            <b>SHOP NOW</b>
+          </button></a>
         </div>
-        <p>
-          Luxury Makeup at Unbeatable Prices: Treat Yourself Without Breaking
-          the Bank!
-        </p>
-        <button
-          style="
-            padding: 10px 30px;
-            font-size: 18px;
-            border-radius: 10px;
-            margin-top: 0px;
-            background-color: transparent;
-            color: white;
-          "
-        >
-          <b>SHOP NOW</b>
-        </button>
+      </div>
+      <!--Featured-products-->
+      
+<div class="container">
+  <h2 class="featured mt-5" > 
+    SHOP FROM OUR LATEST COLLECTION 💙
+  </h2> 
+<hr>
+  <!-- Carousel -->
+
+<div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" class="inactive"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" class="inactive"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <div class="row">
+        <div class="col-4"><img src="assets/images/Rectangle 1 (3).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (4).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (6).png" alt="Los Angeles" class="d-block w-100"></div>
       </div>
     </div>
-    <div class="ekaur">
-      <b>SHOP FROM OUR LATEST COLLECTION 💙</b>
-    </div>
 
-    <div class="flex-container">
-      <div class="flex-item-left"><img src="./img/all.jpg" alt="" /></div>
-      <div class="flex-item-middle">
-        <img src="./img/lipsticks.jpg" alt="" />
+ <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-4"><img src="assets/images/Rectangle 1 (7).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (8).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (1).png" alt="Los Angeles" class="d-block w-100"></div>
       </div>
-      <div class="flex-item-right"><img src="./img/lip2.jpg" alt="" /></div>
-    </div>
 
-    <div class="vdo">
-      <b>THIS IS INSANE 🥵❤️‍🔥</b>
-    </div>
-    <div style="margin-right: 4rem;">
-    <video width="100%" height="50" autoplay="autoplay" loop="loop" controls="controls">
-        <source src="./img/red lipsticks.mp4" type="video/mp4">
-    </video>
 </div>
+
+ <div class="carousel-item">
+
+      <div class="row">
+        <div class="col-4"><img src="assets/images/Rectangle 1 (4).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (7).png" alt="Los Angeles" class="d-block w-100"></div>
+        <div class="col-4"><img src="assets/images/Rectangle 1 (6).png" alt="Los Angeles" class="d-block w-100"></div>
+      </div>
+
+</div>
+  </div>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="vdo">
+  <b>THIS IS INSANE 🥵❤️‍🔥</b>
+</div><hr><br>
+<!-- <div style="margin-right: 24rem;" id="myVideo">
+  <video width="100" height="1" autoplay="autoplay" loop="loop" controls="controls">
+      <source src="./img/vdo/anher.mp4" type="video/mp4">
+  </video>
+</div> -->
+<div style="margin-left: 3rem;">
+  <video id="myVideo" style="width: 100%; max-width: 1200px; height: auto;" autoplay="autoplay"  controls="controls">
+      <source src="./img/vdo/another.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+      <!--Home-->
+      <section id="home">
+
+        <div class="main">
+          <div class=" row main-body">
+
+             <div class=" col-md-6 main-text">
+              <h1>GLOWMELA</h1>
+              <br>
+            <p>
+              Step into the world of <span class="glamour"><em>GLAMM</em></span>, where beauty knows no
+              bounds. Born from a passion for makeup that truly resonates with
+              the soul, our website offers a vast collection of cosmetics
+              curated meticulously for every skin tone, style, and sentiment.
+              Each product in our lineup, from the vibrant eyeshadows to the
+              subtle lip tints, has been crafted with the utmost care, ensuring
+              not just lasting wear but also skincare benefits. Beyond the
+              products, we're dedicated to educating and inspiring. Explore a
+              trove of tutorials, expert insights, and beauty tips tailored to
+              both novices and aficionados alike. Whether you're looking for
+              your everyday essentials or eager to experiment with the latest
+              trends, Glmour Oasis is your trusted partner in all things beauty.
+              <br><br>
+              <a class="koisa" href="catalog.html">View Catalog</a>
+            </p>
+            </div>
+
+            <div class=" col-md-6 main-image">
+            <img
+              src="assets/images/about 9.jpg"
+              class="img-fluid"
+            /></div>
+            </section>
+             <!--quote-section-->
+      <sect id="quote">
+        <div class="quote mt-3 mb-3 mt-sm-5">
+          <p>
+            <em>
+              "Makeup is not a mask that covers up your beauty;
+               it's a tool that helps you express who you are from the inside
+               and an affirmation of oneself hat helps you express who you are from the inside"
+            </em>
+            <span class="author">-Kevyn Aucoin</span>
+          </p>
+        </div>
+      </div>
+      </section>
+            <!--footer-->
+      <section id="footer">
+        <footer>
+          <div style="text-align: center;">
+         
+            <BR>
+          <div class="container">
+          <div class="footer-main row">
+            <!-- <div class="footer-tag col-4 col-lg-2 mb-3">
+              <H4>COPYRIGHT</H4>
+            </div> -->
+
+            <div class="footer-tag col-4 col-lg-2 mb-3">
+              <h4>Location</h4>
+              <p>India</p>
+              <p>USA</p>
+              <p>London</p>
+              <p>Dubai</p>
+              <!-- <h4>Links</h4>
+              <p>Home</p>
+              <p>Featured</p>
+              <p>About</p>
+              <p>Catalog</p>
+              <p>Best sellers</p> -->
+            </div>
+
+            <div class="footer-tag col-4 col-lg-2 mb-3">
+              <h4>Contact</h4>
+              <p>+91 8006658900</p>
+              <p>+94 23 3459089</p>
+              <p>aarohidixit2831@gmail.com</p>
+              <p>anshkaushal777@gmail.com</p>
+            </div>
+
+            <div class="footer-tag col-4 col-lg-2" >
+              <h4>Services</h4>
+              <p>Makeup products</p>
+              <p>Product recommendation</p>
+              <p>Fast delivery</p>
+              <p>Easy payment</p>
+            </div>
+
+            <div class="footer-tag col-8 col-lg-3">
+              <h4>Newsletter</h4>
+              <p>You can trust us, we only send promo offer</p>
+              <div class="subscribe">
+                <input type="text" placeholder="Enter your email">
+                <a href="#" class="btn">Submit</a>
+                <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-regular fa-envelope"></i>
+
+              </div>
+</div>
+                </div>
+            </div>
+          </div><BR>
+            <div style="text-align: center; background-color: #86C6FD; color: black;">
+             © 2024 GLOWMELA E-RETAIL LIMITED All Rights Reserved.
+          </div> <br>
+        </footer>
+          
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const video = document.getElementById('myVideo');
+      
+          // Create an intersection observer
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                video.play(); // Play the video when it enters the viewport
+              } else {
+                video.pause(); // Pause the video when it exits the viewport
+                video.currentTime = 0; // Reset video to start
+              }
+            });
+          }, { threshold: 0.5 }); // 0.5 means 50% of the video needs to be visible for the play to trigger
+      
+          // Observe the video element
+          observer.observe(video);
+        });
+      </script>
+      
   </body>
 </html>
