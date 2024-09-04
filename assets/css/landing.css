@@ -10,6 +10,7 @@
   margin-left: 10px;
   font-size: 1.2rem;
   font-family: "Montserrat";
+  /* background-color: #86C6FD; */
 }
 .nav-link{
   color: black;
@@ -212,7 +213,7 @@ body {
   transition: all 200ms ease-in-out;
 }
 #about h1:hover {
-  color: blueviolet;
+  color: #86C6FD;
 }
 .about-main {
   margin-top: 70px;
@@ -424,4 +425,12 @@ footer .footer-main .footer-tag p {
   .socials {
     font-size: 20px;
   }
+}
+.container-fluid{
+  background-color: #86C6FD;
+  /* padding-top: 1rem; */
+  height: 80px;
+  font-size: 19px;
+  font-family: "Montserrat"; 
+  
 }

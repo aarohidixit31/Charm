@@ -9,8 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      About/GLOWMELA: A makeup and skincare website where you can shop
-      quality products
+      About/GLOWMELA
     </title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -23,12 +22,46 @@
     <link rel="stylesheet" href="assets/css/landing.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+  <style>
+    .parallax{
+      background-image: url("./img/bss.jpg");
+      min-height: 370px;
+      background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    @media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.para1{
+  background-image: url("./img/bss.jpg");
+  min-height: 300px;
+      background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media only screen and (max-device-width: 1366px) {
+  .para1 {
+    background-attachment: scroll;
+  }
+}
+  </style>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" >
+      <div class="container-fluid" >
         <a class="navbar-brand" href="index.html">
-          GLOW<span class="navbar-logo">Mela</span>
+          <img
+          src="./img/cosmetics.png"
+          alt=""
+          style="width: 3.7rem; height: 3.5rem"
+        />
+          <!-- GLOW<span class="navbar-logo">Mela</span> -->
         </a>
         <button
           class="navbar-toggler"
@@ -58,50 +91,55 @@
           </form>
           <div class="icons">
             <A href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></A></div>
-            <di class="icons">
-            <i class="fa-regular fa-user" id="login"></i>
+            <div class="icons">
+              <a href="./signup.html"><i class="fa-regular fa-user" id="login"></i></a>
           </div>
         </div>
       </div>
     </nav>
     <!--About section-->
-
-    <div class="section" id="about">
-      <a href="#about-text"> <h1>About Us</h1></a>
+<div class="parallax"></div>
+    <div style="height:10rem; font-size:2rem ;text-align: center; background-color: #86C6FD; padding-top: 2rem;">
+     <h2 style="font-size: 4rem;">ABOUT GLOWMELA</h2>
     </div>
+    <div class="parallax"></div>
+
 
     <div class="container">
-      <div class="about-heading">
+      <!-- <div class="about-heading">
         <h2>Our Glowing Story</h2>
         <p>
           Born out of passion for authentic beauty, each shade, each texture,
           tells a story<br />
           <span class="glamour-story"> - both yours and ours</span>
         </p>
-      </div>
+      </div> -->
       <div class="about-main">
         <div class="row about-body">
           <div class="col-md-6 about-image">
             <img src="assets/images/black-girl.jpg" class="img-fluid" />
           </div>
-          <div class="col-md-6 about-text" id="about-text">
-            <p>
-              Welcome to GLOWMELA, where style meets sophistication and beauty is celebrated in all its forms. At GLOWMELA, we believe that fashion and cosmetics are more than just trends—they're a means of self-expression and empowerment.
+          <div class="col-md-6 about-text" id="about-text" style="font-size: 1.4rem;">
+            <p><br><br><br>
+              Welcome to <b style="color: #4dabfe;">GLOWMELA</b>, where style meets sophistication and beauty is celebrated in all its forms.
+               At GLOWMELA, we believe that fashion and cosmetics are more than just trends- <br>they're
+                a means of self-expression and empowerment.
             </p>
           </div>
         </div>
+
         <div class="about-main">
           <div class="row about-body">
             <div class="col-md-6 about-text" id="about-text">
-              <h3 class="glamorous">GLOW Glamorous!</h3>
-              <p>
-                Our Story
+              <h3 style="color: #4dabfe; margin-left: 7rem;"><br><br>GLOW Glamorous!</h3>
+              <p style="font-size: 1.2rem;">
+                <b>Our Story</b>
 <br>
-Founded in 2015, GLOWMELA was born out of a passion for discovering and delivering the finest in fashion, beauty, and cosmetics. What started as a dream to curate a collection of high-quality, on-trend products has grown into a vibrant destination for those who value both luxury and individuality.
+Founded in 2015,<b style="color: #4dabfe;"> GLOWMELA</b> was born out of a passion for discovering and delivering the finest in fashion, beauty, and cosmetics. What started as a dream to curate a collection of high-quality, on-trend products has grown into a vibrant destination for those who value both luxury and individuality.
+<br> <br>
+<b>Our Mission</b>
 <br>
-Our Mission
-<br>
-Our mission is simple: to inspire and enhance your unique beauty with products that not only meet the highest standards of quality but also celebrate the diversity of style and personality. We carefully select every item in our collection to ensure it aligns with our commitment to excellence, offering you the latest trends and timeless classics.
+Our mission is simple to inspire and enhance your unique beauty with products that not only meet the highest standards of quality but also celebrate the diversity of style and personality. We carefully select every item in our collection to ensure it aligns with our commitment to excellence, offering you the latest trends and timeless classics.
               </p>
             </div>
             <div class="col-md-6 about-image">
@@ -110,7 +148,16 @@ Our mission is simple: to inspire and enhance your unique beauty with products t
           </div>
         </div>
       </div>
-    </div>
+    </div> <br><br>
+    <div class="para1"></div>
+    <div style="height:10rem; font-size:1.5rem ;text-align: center; background-color: #86C6FD; padding-top: 1rem;">
+      <h2 style="font-size: 2rem;">OUR GLOWING STORY </h2>
+      <p>
+        Born out of passion for authentic beauty, each shade, each texture,
+        tells a story<br />
+        <b ><i><span>-both yours and ours💙</span></i></b>
+     </div>
+  <div class="para1"></div>
     <section id="footer">
       <footer>
         <div style="text-align: center;">
