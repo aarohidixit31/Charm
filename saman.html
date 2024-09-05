@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lipsticks - GlowMela</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/catalog.css" />
+    <style>
+      /* Base Styles */
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+
+      h2 {
+        color: #86C6FD;
+        font-weight: bold;
+        font-size: 2.4rem;
+      }
+
+      .card {
+        margin-bottom: 2rem;
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-img-top {
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover .card-img-top {
+        transform: scale(1.1);
+      }
+
+      .card-body {
+        text-align: center;
+        padding: 15px;
+      }
+
+      .card-title {
+        font-weight: 600;
+        color: #86C6FD;
+        margin-bottom: 16px;
+      }
+
+      .card-text {
+        font-size: 14px;
+        color: #777;
+      }
+
+      /* CTA Button */
+      .btn-buy {
+        background-color: #86C6FD ;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .btn-buy:hover {
+        background-color:  #4ba6f7;
+      }
+
+      /* Adding an interactive button at the bottom of each card */
+      .card-footer {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media only screen and (max-width: 768px) {
+        .card-title {
+          font-size: 1.2rem;
+        }
+        .card-text {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5"><hr>
+      <h2 class="text-center mb-4">Lipsticks Collection🥵</h2> <hr><br> <br>
+      <div class="row">
+        <!-- Lipstick Item 1 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lipo.jpg"
+              class="card-img-top"
+              alt="Lipstick 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Matte Red</h5>
+              <p class="card-text">Smooth and long-lasting.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 2 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lip2.jpg"
+              class="card-img-top"
+              alt="Lipstick 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Glossy Pink</h5>
+              <p class="card-text">Perfect for a night out.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 3 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lip2.jpg"
+              class="card-img-top"
+              alt="Lipstick 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nude Beige</h5>
+              <p class="card-text">Everyday subtle beauty.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 4 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lipo.jpg"
+              class="card-img-top"
+              alt="Lipstick 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Plum Velvet</h5>
+              <p class="card-text">Bold and beautiful.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 5 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lip3.jpg"
+              class="card-img-top"
+              alt="Lipstick 5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coral Shine</h5>
+              <p class="card-text">Vibrant summer shades.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 6 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lip3.jpg"
+              class="card-img-top"
+              alt="Lipstick 6"
+              style="height: 21.2rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Berry Burst</h5>
+              <p class="card-text">Perfect for bold looks.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 7 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lip4.jpg"
+              class="card-img-top"
+              alt="Lipstick 7"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cherry Bomb</h5>
+              <p class="card-text">Bright and captivating.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lipstick Item 8 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="./img/lipo.jpg"
+              class="card-img-top"
+              alt="Lipstick 8"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rosy Glow</h5>
+              <p class="card-text">For that natural look.</p>
+              <div class="card-footer">
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
