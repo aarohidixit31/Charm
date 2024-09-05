@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Powder Collection - GlowMela</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/catalog.css" />
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h2 {
+      color: #86C6FD;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+
+    .card {
+      margin-bottom: 2rem;
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 15rem; /* Set a fixed height for images */
+      object-fit: cover; /* Ensures images cover the container without distortion */
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 15px;
+      flex: 1; /* Ensures card body grows to fill the available space */
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: #86C6FD;
+      margin-bottom: 16px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .btn-buy {
+      background-color: #86C6FD;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .btn-buy:hover {
+      background-color: #4ba6f7;
+    }
+
+    .card-footer {
+      text-align: center;
+      margin-top: auto; /* Pushes the footer to the bottom of the card */
+    }
+
+    /* Media Queries for Responsiveness */
+    @media only screen and (max-width: 768px) {
+      .card-title {
+        font-size: 1.2rem;
+      }
+      .card-text {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <hr>
+    <h2 class="text-center mb-4">Powder Collection✨</h2>
+    <hr><br> <br>
+    <div class="row">
+      <!-- Powder Item 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/amanda-dalbjorn-t7WrWaewbtw-unsplash.jpg"
+            class="card-img-top"
+            alt="Powder 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Translucent Powder</h5>
+            <p class="card-text">For a flawless finish and shine control.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 2 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/amir-seilsepour.jpg"
+            class="card-img-top"
+            alt="Powder 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Matte Finish Powder</h5>
+            <p class="card-text">Achieve a smooth matte look.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 3 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/jake-peterson-VJ4pn_PSBLo-unsplash.jpg"
+            class="card-img-top"
+            alt="Powder 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Illuminating Powder</h5>
+            <p class="card-text">Add a radiant glow to your skin.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 4 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/johanne-pold-jacobsen-1A5hSvPZjMc-unsplash.jpg"
+            class="card-img-top"
+            alt="Powder 4"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Setting Powder</h5>
+            <p class="card-text">Lock in your makeup for all-day wear.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 5 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/pix 3.png"
+            class="card-img-top"
+            alt="Powder 5"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Finishing Powder</h5>
+            <p class="card-text">Perfect for a polished look.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 6 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/pix 4.jpg"
+            class="card-img-top"
+            alt="Powder 6"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mineral Powder</h5>
+            <p class="card-text">For a natural, breathable finish.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 7 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/pix 5.jpg"
+            class="card-img-top"
+            alt="Powder 7"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Glow Powder</h5>
+            <p class="card-text">Enhance your natural glow.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powder Item 8 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card">
+          <img
+            src="./assets/images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg"
+            class="card-img-top"
+            alt="Powder 8"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bronzing Powder</h5>
+            <p class="card-text">Add a touch of sun-kissed warmth.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
